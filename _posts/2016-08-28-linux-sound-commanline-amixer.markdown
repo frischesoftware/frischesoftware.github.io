@@ -11,12 +11,12 @@ Problem: Between doing various configuration changes and unplugging my speakers,
 
 Solution: On windows you'd click on that speaker tray icon; on Ubuntu/i3 this worked:
 
-{% highlight bash %}
+{% highlight ruby %}
 amixer -D pulse sset Master unmute
 amixer -D pulse sset Master 100%
 {% endhighlight %}
 
 to mute:
-{% highlight bash %}
+{% highlight ruby %}
 amixer -D pulse sset Master mute
 {% endhighlight %}
