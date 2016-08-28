@@ -1,0 +1,13 @@
+<h3 id="control-sound-volume-via-commandline">Control sound volume via commandline</h3>
+
+<p>Problem: Between doing various configuration changes and unplugging my speakers, Youtube didn’t play sound anymore!</p>
+
+<p>Solution: On windows you’d click on that speaker tray icon; on Ubuntu/i3 this worked:</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">amixer</span> <span class="o">-</span><span class="no">D</span> <span class="n">pulse</span> <span class="n">sset</span> <span class="no">Master</span> <span class="n">unmute</span>
+<span class="n">amixer</span> <span class="o">-</span><span class="no">D</span> <span class="n">pulse</span> <span class="n">sset</span> <span class="no">Master</span> <span class="mi">100</span><span class="o">%</span></code></pre></figure>
+
+<p>to mute:</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">amixer</span> <span class="o">-</span><span class="no">D</span> <span class="n">pulse</span> <span class="n">sset</span> <span class="no">Master</span> <span class="n">mute</span></code></pre></figure>
+
